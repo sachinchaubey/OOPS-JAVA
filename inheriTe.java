@@ -1,4 +1,5 @@
-
+// INHERITANCE : the proces where one class acquires ,
+        //  the attributs and method of another class
 
 
 public class inheriTe{
