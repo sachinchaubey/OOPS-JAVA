@@ -8,9 +8,9 @@ public class inheriTe{
 
         Bicycle bicycle = new Bicycle();
 
-        // car.go();
+        car.go();
         // bicycle.speed();
-        System.err.println(car.tyre);
+        System.out.println(car.tyre);
         System.out.println(car.speed);
         System.out.println(bicycle.paddle);
     } 
