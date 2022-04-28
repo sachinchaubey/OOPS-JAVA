@@ -6,12 +6,23 @@
 public class encap{
     public static void main(String[] args){
         Car car = new Car("Bmw","q2",2021);
+        // Car car1 = new Car("merc" ,"tata",2022);
+        Car car1 = new Car(car);
 
-        car.setModel("glw 200"); 
+        // car1.copy(car);
 
+        // car.setModel("glw 200");
+        System.out.println(car);
+        System.out.println(car1);
+        System.out.println(""); 
         System.out.println(car.getName());
         System.out.println(car.getModel());
-        System.out.println(car.getYear()); 
+        System.out.println(car.getYear());
+        System.out.println(""); 
+        System.out.println(car1.getName());
+        System.out.println(car1.getModel());
+        System.out.println(car1.getYear()); 
+        
     }
 }
 
@@ -25,6 +36,9 @@ class Car{
         this.setModel(model);
         this.setYear(year);
     }
+    Car (Car x){
+        this.copy(x);
+    } 
 
     public String getName(){
         return name;
@@ -48,6 +62,12 @@ class Car{
 
     public void setYear(int year){
         this.year=year; 
+    }
+
+    public void copy(Car x){
+        this.setModel(x.getModel());
+        this.setName(x.getName());
+        this.setYear(x.getYear());
     }
 
 }
