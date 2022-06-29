@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class dyna_poly{
     public static void main(String[] args){
-
+        
         try (Scanner sc = new Scanner(System.in)) {
             Animal animal;
 

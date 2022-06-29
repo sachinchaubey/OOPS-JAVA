@@ -6,7 +6,7 @@ public class over_riding{
     public static void main(String[] args){
         Dog dog = new Dog();
         Animal animal = new Animal();
-        dog.speak(); 
+        dog.loud(); 
         animal.speak();
     }
 }
@@ -17,9 +17,9 @@ class Animal{
     }
 }
 
-class Dog extends Animal{
-    @Override
-    void speak(){
+class Dog{
+
+    void loud(){
         System.out.println("dog is bark");
     }
 }
